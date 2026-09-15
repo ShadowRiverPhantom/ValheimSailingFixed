@@ -1,0 +1,18 @@
+# Build output
+dist/
+bin/
+obj/
+*.pdb
+
+# Upstream binaries, used as build input only
+upstream/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+
+# OS
+Thumbs.db
+desktop.ini
