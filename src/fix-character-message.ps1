@@ -160,7 +160,7 @@ foreach ($type in $assembly.MainModule.Types) { Repair-Type $type }
 
 if ($count -eq 0) {
     $assembly.Dispose()
-    throw 'No four-parameter Character.Message call site found - nothing to adapt.'
+    throw 'No four-parameter Character.Message call site found - this plugin is already adapted, or it is not the pre-1.0 build. Pass -SourceDll with the original upstream release.'
 }
 
 $directory = Split-Path $OutDll -Parent
