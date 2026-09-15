@@ -5,8 +5,6 @@ Should work fine with vanilla, not sure about other mods
 Fixed source code fork: https://github.com/ShadowRiverPhantom/ValheimSailingFixed
 Original mod: https://github.com/blaxxun-boop/Sailing
 
-Original README below V
-
 ---
 
 # Sailing
