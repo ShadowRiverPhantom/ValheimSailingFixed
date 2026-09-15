@@ -33,7 +33,7 @@
     BepInEx core directory that contains Mono.Cecil.dll. Defaults to $env:BEPINEX_CORE_DIR.
 
 .EXAMPLE
-    .\fix-character-message.ps1 -SrcDll .\upstream\Sailing.dll -OutDll .\dist\Sailing.dll
+    .\fix-character-message.ps1 -SrcDll .\upstream\Sailing.dll -OutDll .\dist\SailingFixed.dll
 #>
 [CmdletBinding()]
 param(

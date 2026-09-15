@@ -10,7 +10,7 @@
 
 .EXAMPLE
     .\verify-refs.ps1
-    .\verify-refs.ps1 -Assembly ..\dist\Sailing.dll
+    .\verify-refs.ps1 -Assembly ..\dist\SailingFixed.dll
 #>
 [CmdletBinding()]
 param(
@@ -22,7 +22,7 @@ param(
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 
-if (-not $Assembly) { $Assembly = Join-Path $root 'dist\Sailing.dll' }
+if (-not $Assembly) { $Assembly = Join-Path $root 'dist\SailingFixed.dll' }
 if (-not (Test-Path $Assembly)) { throw "Assembly not found: $Assembly. Run build.ps1 first." }
 
 if (-not $ValheimDir) { $ValheimDir = $env:VALHEIM_DIR }
